@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+}
+
+.next{
+    color: #0f0;
+    font-size: 20px;
+    text-align: right;
+    text-align: down;
+    transition: all 0.1s ease-in-out;
+}
+
+.next:hover{
+    color: #050;
+    font-size: 22px;
+    transform: scale(1.1);
+}
+
+.imie{
+    color: #fee;
+    font-size: 50px;
+    transition: all 0.15s ease-in-out; 
+}
+
+.imie:hover{
+    color: #f55;
+    transform: scale(5);
+}
+
+h1{
+    color: red;
+    font-size: 50px;
+    transition: all 0.1s ease-in-out; 
+}
+
+h1:hover{
+    color: #550000;
+    transform: scale(1.05);
+}
+
+h2{
+    color: #0ff;
+    font-size: 30px;
+    transition: all 0.1s ease-in-out; 
+}
+
+h2:hover{
+    color: #00f;
+    transform: scale(1.05);
+}
+
+p{
+    color: #550;
+    font-size: 15px;
+    text-align: right;
+}

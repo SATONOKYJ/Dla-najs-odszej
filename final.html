@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: black;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <video autoplay playsinline>
+        <source src="final.mp4" type="video/mp4">
+    </video> -->
+
+    <video id="final-video" autoplay playsinline>
+        <source src="final0.mp4" type="video/mp4">
+    </video>
+
+
+    <script>
+        const filmy = [
+            "final0.mp4",
+            "final.mp4",
+            "jejspiew.mp4"
+        ];
+
+        const video = document.getElementById("final-video");
+
+        let aktualnyFilm = 0;
+
+        function odtworzFilm() {
+
+            video.src = filmy[aktualnyFilm];
+
+            video.play();
+
+        }
+
+        video.addEventListener("ended", function() {
+
+            aktualnyFilm++;
+
+            if (aktualnyFilm < filmy.length) {
+
+                odtworzFilm();
+
+            }
+
+        });
+
+        odtworzFilm();
+    </script>
+
+
+</body>
+</html>
